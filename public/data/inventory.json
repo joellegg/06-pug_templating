@@ -1,0 +1,40 @@
+{
+  "inventory": [
+    {
+      "name": "cake pops",
+      "price": 9.99,
+      "image": "img/cake-pops.jpg",
+      "description": "Looking for an easy treat for the kids or yourself? Look no further."
+    },
+    {
+      "name": "chocolate cake",
+      "price": 19.99,
+      "image": "img/chocolate_cake.jpg",
+      "description": "This is my family's favorite chocolate cake. Give it a try, I'm sure it'll be your favorite too!"
+    },
+    {
+      "name": "chocolate cheesecake",
+      "price": 26.99,
+      "image": "img/chocolate-cheescake-bb.jpg",
+      "description": "This is my husbands favorite desert! He literally asks for it all the time. "
+    },
+    {
+      "name": "cookies",
+      "price": 11.99,
+      "image": "img/cookies.jpg",
+      "description": "The best cookies under the sun as my husband calls them. Nice and soft but not cakey."
+    },
+    {
+      "name": "cupcakes",
+      "price": 14.99,
+      "image": "img/cupcakes.jpg",
+      "description": "These make a great addition to any party. They're easy to divide amongst the kiddos."
+    },
+    {
+      "name": "cheesecake",
+      "price": 25.99,
+      "image": "img/plain-cheesecake.jpg",
+      "description": "This is my grandmothers recipe passed down through the family. It's amazing."
+    }
+  ]
+}

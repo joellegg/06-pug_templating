@@ -1,23 +1,26 @@
 'use strict';
+const data = require('./public/data/inventory.json');
+console.log('data', data.inventory);
+const inventory = data.inventory
 
 const express = require('express');
 const app = express();
 
-// three routes; `/`, `/about` and `/inventory`
 app.use(express.static('public'));
-
 app.set('view engine', 'pug');
 
-const names = ["Larry", "Moe", "Curly", "Frank"];
-
 // ROUTES
+// three routes; `/`, `/about` and `/inventory`
 app.get('/', (req, res, next) => {
   // first object is name of the template, second is the object of data
-  res.render('index', {subtitle: "This came from my JS data", names, loggedIn: false})
+  res.render('index', {currentPage: '/'})
 });
-app.get('/article', (req, res, next) => {
-  res.render('article', {subtitle: "This came from my JS data", names, loggedIn: true})
+app.get('/about', (req, res, next) => {
+  res.render('about', {currentPage: '/about'})
 });
+app.get('/inventory', (req, res, next) => {
+  res.render('inventory', {currentPage: '/inventory', inventory})
+})
 
 
 // PORT

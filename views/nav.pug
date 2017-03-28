@@ -1,0 +1,10 @@
+nav
+  div.nav-wrapper
+    a.brand-logo.right(href="#") Amy Cakes!
+    ul.left#nav-mobile
+      li
+        a.hidden(class={active: currentPage !== '/'} href="/") Home
+      li
+        a.hidden(class={active: currentPage !== '/about'} href="/about") About
+      li
+        a.hidden(class={active: currentPage !== '/inventory'} href="/inventory") Inventory

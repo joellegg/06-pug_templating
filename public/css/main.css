@@ -1,7 +1,37 @@
-.foot-nav {
+.hidden {
   display: none;
 }
-
 .active {
   display: inline-block;
+}
+.welcome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-about {
+  display: flex;
+  margin: 0 1em;
+}
+.profile-pic {
+  /*border: 1px solid black;*/
+}
+.section-about {
+  padding-left: 2em;
+  color: teal;
+  font-size: 1.4em;
+}
+.price-color {
+  color: coral !important;
+  font-weight: bold;
+}
+.about {
+  font-size: 1.3em;
+  padding: 1em;
+  color: teal;
+}
+
+/* INVENTORY PAGE */
+.inventory-container {
+  display: flex;
 }
