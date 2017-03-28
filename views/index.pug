@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title pug demo
+    include stylesheets.pug
+  body
+    h1 Happy as a little Pug in a rug
+    //- h2= something
+    //- h2 #{}
+    h2 #{subtitle}
+    //- makes a div with a class of names without declaring it
+    .names
+      ul
+        each name in names
+          li Hello, #{name}
+
+    - let wtf = "js is in my pug! Huh?"
+
+    input(type = 'text', placeholder=wtf)
+
+    //- this will be replaced with something from another template (like ng-view)
+    block content
+      p This is here by default
+
+    .footer-nav
+      //- condition class using object mapping
+      a.foot-nav(class={active: loggedIn === true} href='/') Logout
+      a.foot-nav(class={active: loggedIn === false} href='/') Login/Register
+
+      //- or...
+      //- if loggedIn
+      //-   a.foot-nav(class=active href='/') Logout
+      //- else
+      //-   a.foot-nav(class=active href='/') Login/Register
