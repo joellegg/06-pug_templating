@@ -3,13 +3,13 @@ extends index.pug
 block content
   .inventory-container
     .row
-      each item in inventory
+      each item, index in inventory
         div.col.xs12.s6.m4
           .card
             .card-image
               img(src=item.image)
               span.card-title #{item.name}
             .card-content
-              p #{item.description}  #{item.image}
+              p #{item.description}
             .card-action
-              a.price-color(href="#") $#{item.price}/cake
+              a.price-color(href="#") $#{item.price}/cake #{index}
