@@ -1,0 +1,20 @@
+{
+  "name": "06-pug_templating",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "joellegg <joellegg@bellsouth.net>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/joellegg/06-pug_templating",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.1"
+  }
+}
